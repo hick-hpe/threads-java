@@ -10,7 +10,7 @@ public class HelloMaster {
         Thread[] threads = new Thread[nThreads];
 
         for (int i = 0; i < nThreads; i++) {
-            Thread objThread = new Thread(new HelloFromThread(1));
+            Thread objThread = new Thread(new HelloFromThread(i+1));
             threads[i] = objThread;
             objThread.start();
             
